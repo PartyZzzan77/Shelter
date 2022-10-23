@@ -1,0 +1,55 @@
+.content{
+  @include flexBlockWrap();
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content__heading{
+  max-width: 370px;
+  @extend %font-primary;
+  @include font($size:3.5rem, $height:$line-head130, $spacing:$letter-spacing0_6, $color:$color-dark-l);
+  @include tablet{
+    margin-top: 21px;
+  }
+  @include response($min:1px,$max:767px){
+  margin-top: 21px; 
+  }
+  @include response($min:1px,$max:468px){
+    margin-top: 21px;
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: $letter-spacing0_6;
+  }
+
+    &_quotes{
+      padding-left: 0px;
+      &::before, ::after{
+        content: "“";
+        line-height: 0;
+      }
+      &::after{
+        content: "”";
+        }
+        @include response($min:1px, $max:468px){
+          display: block;
+        }
+  }
+}
+
+.content__text{
+  max-width: 430px;
+  @extend %font-add;
+  @include font($size:1.5rem, $height:$line-head160, $color: $color-dark-xl);
+  @include tablet{
+    margin-top: 24px;
+  }
+  @include response($min:1px,$max:767px){
+    margin-top: 24px; 
+  }
+  @include response($min:1px, $max:468px){
+    max-width: 270px;
+    margin-top: 24px;
+    text-align:justify;
+  }
+}
+

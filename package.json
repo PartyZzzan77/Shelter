@@ -1,0 +1,27 @@
+{
+  "name": "partyzzzan77-jsfe2022q1",
+  "version": "1.0.0",
+  "description": "shelter ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./shelter/assets/scss/main.scss ./shelter/assets/scss/main.css",
+    "min": "sass --watch ./shelter/assets/scss/main.scss:./shelter/assets/styles/main.min.css --style=compressed && postcss assets/theme.min.css --replace --use autoprefixer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolling-scopes-school/partyzzzan77-JSFE2022Q1.git"
+  },
+  "author": "Dmitry Averkin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rolling-scopes-school/partyzzzan77-JSFE2022Q1/issues"
+  },
+  "homepage": "https://github.com/rolling-scopes-school/partyzzzan77-JSFE2022Q1#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.4",
+    "lodash": "^4.17.21",
+    "postcss-cli": "^9.1.0",
+    "sass": "^1.50.0"
+  }
+}

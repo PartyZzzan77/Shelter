@@ -1,0 +1,43 @@
+.menu{
+  @include mobile{
+    display: none;
+  }
+  ul{
+    height: 100%;
+    @include flexBlockWrap();
+    align-items: center;
+  }
+}
+.menu__link {
+margin-left: 36px;
+> a{
+  @extend %font-add;
+  @include font($size:1.5rem, $color:$color-dark-s);
+  &:hover{
+    color: $background-light;
+  }
+}
+  &_active{
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -10px;
+      background-color: $color-primary;
+      height: 3px;
+    }
+    a{
+      color: $background-light;
+    }
+  }
+  &_dark{
+    > a {
+    color:$color-dark-l;
+    &:hover{
+      color: $color-dark-m;
+      }
+    }
+  }
+}

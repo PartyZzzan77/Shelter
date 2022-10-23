@@ -1,0 +1,21 @@
+.logo{
+  transition: visibility .8s; 
+}
+.logo__title{
+  @extend %font-primary;
+  @include font($size:3.2rem, $spacing:$letter-spacing0_6, $height:110%, $color:$color-primary );
+  &_dark{
+    color:$color-dark-l;
+  }
+}
+.logo__subTitle{
+  margin:10px 1px 0 4px;
+  @extend %font-add;
+  @include font($size:1.3rem, $height:1.5rem, $spacing: 0.1em, $color: $color-light-xl);
+  align-items: center;
+  letter-spacing: 0.1em;
+  color:$color-light-xl;
+  &_dark{
+    color: $color-dark-3xl;
+  }
+}

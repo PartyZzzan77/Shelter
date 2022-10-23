@@ -1,0 +1,24 @@
+.carousel-item{
+  display: flex;
+  column-gap: 90px;
+  margin: 0 45px;
+  @include tablet{
+    column-gap: 40px;
+    margin: 0 45px;
+  }
+  @include mobile{
+    column-gap: 40px;
+    margin: 0 40px;
+  }
+}
+@include tablet{
+  .carousel-item .slider__card:last-child{
+    display: none;
+  } 
+}
+
+@include mobile{
+  .carousel-item .slider__card:nth-child(2n+1){
+    display: none;
+  } 
+}

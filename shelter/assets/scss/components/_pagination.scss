@@ -1,0 +1,25 @@
+.pagination{
+  @include flexBlockWrap;
+  justify-content: center;
+  column-gap: 40px;
+  row-gap:  30px;
+  @include tablet{
+    margin-top: -27px;
+  }
+  @include mobile{
+    margin-top: -17px;
+  }
+}
+
+@include tablet{
+  .pagination .slider__card:nth-child(-n+2){
+    display: none;
+  }
+  
+}
+  @include mobile{
+    .pagination .slider__card:nth-child(-n+5){
+      display: none;
+    }
+  }
+

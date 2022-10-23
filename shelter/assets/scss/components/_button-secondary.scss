@@ -1,0 +1,21 @@
+.button-secondary{
+  display: inline-block;
+  width: 187px;
+  height: 52px;
+  padding: 13px 4px;
+  padding-right: 0;
+  border-radius: 100px;
+  border: 2px solid $color-primary;
+  transition: background-color $transition2;
+  
+  text-align: center;
+  
+  background-color: $color-secondary;
+
+  &:hover{
+    background-color: $color-secondary-hover;
+  }
+
+  @extend %font-primary;
+  @include font($size:1.7rem, $height:$line-head130, $spacing:$letter-spacing0_6,$color:$color-dark-3xl);      
+}

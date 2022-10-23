@@ -1,0 +1,25 @@
+.field{
+  @extend %font-primary;
+  @include font($size: 2rem, $height: $line-head115, $spacing: $letter-spacing0_6, $color: $color-dark-l);
+  
+  max-width: 348px;
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 15px;
+  background-color: $color-primary;
+  border-radius: 9px;
+  &:before{
+    content:url(../../assets/icons/main-icons/credit-card.svg);
+  }
+  &:hover{
+    background-color: $color-primary-light;
+  }
+
+  @include mobile{
+    width: 281px;
+    padding: 8px 15px;
+    align-items: center;
+    font-size: 1.5rem;
+    line-height: 110%;
+  }
+}

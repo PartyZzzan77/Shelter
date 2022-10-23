@@ -1,0 +1,96 @@
+.start-screen{
+  font-size: 0;
+  @include response($min:1280px,$max:10000px){
+  background: url(../../assets/images/main-images/start-screen-gradient-background.png);
+  }
+
+  @include response($min:768px,$max:1279px){
+    background:$background-gradient;
+  
+  }
+  @include response($min:100px,$max:768px){
+    background: url(../../assets/images/main-images/start-screen-gradient-background768.png);
+    &__button{
+      margin: auto;
+    }
+  }
+  &_blackout{
+    background: #342F2B;
+  }
+}
+
+.start-screen__content{
+  margin-top: 60px;
+  @include flexBlockWrap;
+  justify-content: space-between;
+  @include tablet{
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  @include mobile{
+  margin-top: 60px;
+  flex-direction: column;  
+  }
+}
+
+.start-screen__section{
+  margin-bottom: 83px;
+  max-width: 460px;
+  align-self: center;
+  @include response(322px,767px){
+    max-width: 460px;
+  }
+}
+.start-screen__button{
+  @include response($min:483px,$max:1279px){
+    margin: 0 126px; 
+  }
+  @include mobile($max:483px){
+    margin: 0 46px;
+  }
+}
+
+.start-screen__heading{
+  max-width: 310px;
+  @extend %font-primary;
+  @include font($size:4.4rem, $height:$line-head130, $color:$color-light-xl);
+  @include mobile(320px, 326px){
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: $letter-spacing0_6;
+      & span{
+        display: block;
+      }
+  }
+}
+
+.start-screen__subheading{
+  margin: 42px 0;
+  @extend %font-add;
+  @include font($size:1.5rem, $height:$line-head160, $color:$color-dark-s);
+  @include mobile(320px, 326px){
+    text-align: center;
+  }
+}
+
+.start-screen__puppy{
+  align-self: flex-end;
+  @include tablet{
+    max-width: 569px;
+    margin-top: 17px;
+  }
+
+  @include response(322px,767px){
+    margin: auto;
+    img{
+    width: 390px;
+    }
+  }    
+  @include mobile($mobile-width,326px ){
+    margin-top: 21px;
+    img{
+      max-width: 260px;
+      align-self: flex-end;
+    }
+  }
+}

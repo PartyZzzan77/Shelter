@@ -1,0 +1,25 @@
+.help{
+  padding-bottom: 95px;
+  background-color: $background-light;
+  @include tablet{
+    padding-bottom: 0;
+  }
+  @include mobile{
+    padding-bottom: 0;
+  }
+}
+
+.help__title{
+  margin: 0 auto;
+  padding-top: 80px;
+
+  span{
+    display: block;
+  }
+  @include tablet{
+    padding-top: 87px;
+    }
+    @include mobile{
+      padding-top: 0px;
+    }
+}

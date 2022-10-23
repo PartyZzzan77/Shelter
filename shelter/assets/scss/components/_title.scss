@@ -1,0 +1,9 @@
+.title{
+  max-width: 400px;
+  @extend %font-primary;
+  @include font($size:3.5rem, $height:$line-head130, $spacing:$letter-spacing0_6, $color: $color-dark-l);
+  text-align: center;
+  @include mobile{
+    font-size: 2.5rem;
+  }
+}

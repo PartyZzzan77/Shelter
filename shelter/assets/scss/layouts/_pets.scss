@@ -1,0 +1,71 @@
+.pets{
+  background-color: $background-grey;
+  padding: 0px 0 100px 0px;
+  // &_main{
+  //   padding: 0px 0 100px 0px;
+  // }
+  
+  &_main-title{
+  padding-top: 80px;
+  }
+  
+  @include tablet{
+    padding: 2px 0 92px 0px;
+  }
+  @include response($min:10px,$max:767px){
+    padding: 0px 0 44px 0px;
+    &__Arrow-left{
+      margin-top: 20px;
+      margin-right: 40px;
+      margin-right: 40px;
+    }
+    &__Arrow-right{
+      margin-top: 20px;
+      margin-left: 40px;
+    }
+  }
+  }
+  .pets__title{
+    margin: 0 auto;
+    padding-top: 82px;
+    span{
+      display: block;
+    }
+    @include tablet{
+      padding-top: 77px;
+    }
+    @include mobile{
+      padding-top: 45px;
+    }
+
+  }
+.pets___container{
+  margin-top: 60px; 
+  justify-content: space-between;
+  @include flexBlockWrap;
+  align-items: center;
+  @include response ($min:10px,$max:1279px){
+    justify-content: center;
+  }
+  @include tablet{
+    width: 708px;
+    margin: 60px auto;
+  }
+  @include mobile{
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+  }
+
+.pets__button-xl{
+  margin: 0 auto;
+  margin-top: 59px;
+  @include tablet{
+    margin-top: 62px;
+  }
+  @include mobile{
+    margin: 40px auto;
+  }
+}
+

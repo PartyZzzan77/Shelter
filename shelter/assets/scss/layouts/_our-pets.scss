@@ -1,0 +1,49 @@
+.our-pets{
+  padding-bottom: 11px;
+  @include tablet{
+    padding-bottom: 0px;
+  }
+  @include mobile{
+    padding-bottom: 0;
+  }
+}
+.our-pets__header{
+  background-color: $background-light;
+  padding: 30px 0;
+}
+.our-pets__overlay{
+  z-index: 0;
+}
+
+.our-pets__wrapper{
+  padding-bottom: 80px;
+  @include tablet{
+    padding-bottom: 20px;
+
+  }
+  @include mobile{
+    padding-bottom: 0;
+  }
+}
+.our-pets__container{
+  @include tablet{
+    max-width: 580px;
+    margin: 29px auto 0;
+    padding-bottom: 0;
+  }
+  @include mobile{
+  
+  }
+}
+.our-pets__navigation{
+  margin: 64px auto;
+  margin-bottom: 0;
+  padding-bottom: 89px;
+  @include tablet{
+    margin: -15px auto;
+  }
+  @include mobile{
+    margin: auto;
+    padding-bottom: 42px;
+  }
+}

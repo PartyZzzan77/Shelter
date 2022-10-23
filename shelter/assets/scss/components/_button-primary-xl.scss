@@ -1,0 +1,21 @@
+.button-primary-xl{
+  display: block;
+  @extend %font-primary;
+  @include font($size:1.7rem,$height:$line-head130,$spacing:$letter-spacing0_6,$color:$color-dark-3xl);
+  
+  
+  width: 261px;
+  height: 52px;
+  padding: 15px;
+
+  text-align: center;
+  border-radius: 100px;
+  transition: background-color $transition2;
+  
+  background-color: $color-primary;
+
+  &:hover{
+    cursor: pointer;
+    background-color: $color-primary-light;
+  }
+}

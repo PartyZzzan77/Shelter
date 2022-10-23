@@ -1,0 +1,53 @@
+.button-third{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @extend %font-primary;
+  @include font($size:2rem,$height: $line-head115,$spacing:$letter-spacing0_6,$color:$color-dark-3xl);
+  text-align: center;
+  width: 52px;
+  height: 52px;
+  border: 2px solid $colo-arrow-hover;
+  border-radius: 100px;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  letter-spacing: $letter-spacing0_6;
+    // img{
+    //   background: $background-grey;
+    //   display: block;
+    //   margin: 20px auto;
+    //       }
+    &:hover{
+      cursor: pointer;
+      background-color: $colo-arrow-hover;
+      // img{
+      //   background-color: $colo-arrow-hover;
+      // }
+    }
+    &_pagination{
+      border: 2px solid $color-pagination-background;
+      background-color: $color-pagination-background;
+      // img{
+      //   background-color: $color-pagination-background;
+      // }
+      &:hover{
+        cursor: default;
+        background-color: $color-pagination-background;
+        border: 2px solid $color-pagination-background;
+        // img{
+        //   background-color: $color-pagination-background;
+        // }
+      }
+    }
+    &_disabled{
+      border: 2px solid $color-dark-s;
+    
+      &:hover{
+        cursor: default;
+        background-color: transparent;
+        // img{
+        //   background-color: transparent;
+        // }
+      }
+    }
+}

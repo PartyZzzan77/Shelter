@@ -1,0 +1,26 @@
+@keyframes move-left {
+  from {left: -1120px;}
+  to {left: -40px;}
+}
+@keyframes move-left-middle {
+  from {left: -706px;}
+  to {left: -36px;}
+}
+
+@keyframes move-left-mobile {
+  from {left: -376px;}
+  to {left: -26px;}
+}
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 3s;
+  @include tablet{
+    animation-name: move-left-middle;
+    animation-duration: 3s;
+  }
+  @include mobile{
+    animation-name: move-left-mobile;
+    animation-duration: 3s;
+  }
+}

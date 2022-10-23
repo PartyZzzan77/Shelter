@@ -1,0 +1,8 @@
+.navigation{
+  max-width: 340px;
+  @include flexBlockWrap;
+  justify-content: space-between;
+  @include mobile{
+    margin-top: 43px;
+  }
+}

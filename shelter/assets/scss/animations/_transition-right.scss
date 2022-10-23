@@ -1,0 +1,28 @@
+@keyframes move-right {
+  from {left: -1120px;}
+  to {left: -2200px;}
+}
+
+@keyframes move-right-middle {
+  from {left: -706px;}
+  to {left: -1376px;}
+}
+
+@keyframes move-right-mobile {
+  from {left: -376px;}
+  to {left: -725px;}
+}
+
+
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 3s;
+  @include tablet{
+    animation-name: move-right-middle;
+    animation-duration: 3s;
+  }
+  @include mobile{
+    animation-name:move-right-mobile;
+    animation-duration: 3s;
+  }
+}

@@ -1,0 +1,33 @@
+.header{
+  padding-top: 28px;
+  &_sticky{
+    padding-bottom: 28px;
+    background-color: $background-light;
+    position: sticky;
+    top: 0;
+  }
+  &_main{
+    padding-top: 60px;
+  }
+  @include tablet{
+    padding-top: 30px
+    }
+  @include mobile{
+    padding-top: 30px;
+  }  
+  &_transparent{
+    background: transparent
+  }    
+  }
+
+  @include tablet{
+    .header_main{
+      padding-top: 26px;
+    }
+  }
+
+
+.header__container{
+  @include flexBlockWrap;
+  justify-content: space-between;
+  }

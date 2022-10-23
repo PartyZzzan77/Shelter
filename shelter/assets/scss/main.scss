@@ -1,0 +1,49 @@
+//absctracts
+//vendors
+@import '../../assets/scss/vendors/normalize';
+@import '../../assets/scss/vendors/reset';
+@import '../../assets/scss/abstracts/variables';
+@import '../../assets/scss/abstracts/placeholders';
+@import '../../assets/scss/abstracts/mixin';
+//base
+@import '../../assets/scss/base/base';
+//fonts
+@import '../../assets/scss/fonts/main/Georgia';
+@import '../../assets/scss/fonts/main/Arial';
+//layouts main page
+@import '../../assets/scss/layouts/main';
+@import '../../assets/scss/layouts/overlay';
+@import '../../assets/scss/layouts/wrapper';
+@import '../../assets/scss/layouts/header';
+@import '../../assets/scss/layouts/start-screen';
+@import '../scss/layouts/about';
+@import '../../assets/scss/layouts/pets';
+@import '../../assets/scss/layouts/help';
+@import '../../assets/scss//layouts/donation';
+@import '../../assets/scss/layouts/footer';
+//layouts our-pets page
+@import '../../assets/scss/layouts/our-pets';
+//animations
+@import '../../assets/scss/animations/transition-left';
+@import '../../assets/scss/animations/transition-right';
+//components
+@import '../../assets/scss/components/popup';
+@import '../../assets/scss/components/header-box';
+@import '../../assets/scss/components/logo';
+@import '../../assets/scss/components/menu';
+@import '../../assets/scss/components/burger';
+@import '../../assets/scss/components/content';
+@import '../../assets/scss/components/title';
+@import '../../assets/scss/components/slider';
+@import '../../assets/scss/components/carousel-item.scss';
+@import '../../assets/scss/components/button-primary';
+@import '../../assets/scss/components/button-primary-xl';
+@import '../../assets/scss/components/button-secondary';
+@import '../../assets/scss/components/button-third';
+@import '../../assets/scss/components/list';
+@import '../../assets/scss/components/card';
+@import '../../assets//scss/components/field';
+@import '../../assets//scss/components/note';
+@import '../../assets/scss/components/navigation';
+@import '../../assets/scss/components/footer-card';
+@import '../../assets/scss/components/pagination';

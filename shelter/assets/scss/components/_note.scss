@@ -1,0 +1,13 @@
+.note{
+  max-width: 380px;
+  @include mobile{
+    max-width: 280px;
+    margin: 20px auto;
+    text-align: justify;
+  }
+}
+
+.note__text{
+@extend %font-add;
+@include font($size:1.2rem, $style:italic, $height: 1.8rem, $color: $color-dark-m);
+}

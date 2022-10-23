@@ -1,0 +1,66 @@
+.slider{
+  display: flex;
+  position: relative;
+  left: -1120px;
+  @include response($min:768px,$max:1279px){
+    left: -706px;
+  }
+  @include response($min:10px,$max:767px){
+    margin-top: -16px;
+    left: -376px;
+  }
+}
+.slider__wrapper{
+  flex-grow: 1;
+  overflow: hidden;
+  max-width: 1000px;
+  @include response($min:768px,$max:1279px){
+    max-width:600px;
+    margin: auto; 
+  }
+  @include response($min:10px,$max:767px){
+    
+    max-width:700px;
+    margin: auto;
+    order:-1;
+  }
+}
+
+
+.slider__card{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  width: 270px;
+  padding-bottom: 30px;
+  background-color: $background-light;
+  border-radius: 9px; 
+  &:hover{
+    cursor: pointer;
+    .slider__button{
+      background-color: $color-secondary-hover;
+      border: 2px solid transparent;
+    }
+      img{
+        background-color: $background-card-hover;
+        border-radius: 9px 9px 0 0 ;
+      }
+  }
+}
+
+
+.slider__heading{
+  margin: 26px auto;
+  margin-bottom: 30px;
+  padding-left: 4px;
+  @extend %font-primary;
+  @include font($size:2rem, $height:2.3rem, $spacing: $letter-spacing0_6, $color: $color-dark-l);
+  text-align: center;
+
+  @include tablet{
+    padding-left: 0;
+  }
+}
+.slider__button{
+margin: auto;
+}
